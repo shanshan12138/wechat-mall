@@ -1,0 +1,42 @@
+/* pages/game/index.wxss */
+/* .page{
+  width: 100%;
+  height: 100%;
+} */
+.contain{
+  display: flex;
+  justify-content: space-between;
+}
+.top{
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.region{
+  display: flex;
+  align-items: center;
+  height: 84rpx;
+  width: 90%;
+  padding-left: 50rpx;
+}
+.address{
+  align-items: center;
+  height: 84rpx;
+  width: 100%;
+  border: 1rpx solid #eee;
+
+}
+
+.input-control{
+  height: 84rpx;
+  width:50%;
+  border: 1rpx solid #eee;
+}
+.save{
+  background-color: #ff2732;
+  color:white;
+  font-size: 28rpx;
+  height: 87rpx;  
+  line-height: 87rpx;
+  margin-top: 680rpx;
+   border-radius: 0;
+}

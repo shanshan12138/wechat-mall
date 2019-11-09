@@ -1,0 +1,140 @@
+/**index.wxss**/
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rpx;
+  padding-bottom: 40rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  color: #101010;
+  text-align: center;
+}
+
+.search {
+  background-color: #f4f8f7;
+  border-radius: 15rpx;
+  width: 689rpx;
+  height: 66rpx;
+  display: flex;
+  margin: 17rpx 36rpx 0 25rpx;
+}
+
+.search icon {
+  width: 30rpx;
+  height: 28rpx;
+  padding: 20rpx 25rpx 17rpx 25rpx;
+}
+
+.weui-input {
+  padding-top: 10rpx;
+  font-size: 26rpx;
+  padding-left: 25rpx;
+  color: #7d7d7d;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.swiper-tab-item {
+  width: 30%;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.active {
+  color: #c9152a;
+  border-bottom: 4rpx solid #c9152a;
+}
+
+swiper {
+  text-align: center;
+  height: 1000rpx;
+}
+
+.good {
+  width: 204rpx;
+  height: 202rpx;
+  background-size: cover;
+}
+
+.good-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 33rpx 34rpx 0 26rpx;
+}
+
+.good-item .right {
+  margin-left: 25rpx;
+  border-bottom: 1px solid  #cfcfcf;
+  
+}
+.good-item .bottom {
+  margin-top: 15rpx;
+}
+
+.good-item .des {
+  width: 456rpx;
+  height: 95rpx;
+  font-family: FZLTHJW--GB1-0;
+  font-size: 26rpx;
+  text-align: left;
+  line-height: 38rpx;
+}
+
+.icon-jifen {
+  width: 18rpx;
+  height: 19rpx;
+  padding-left: 0;
+}
+
+.red-text {
+  text-align: left;
+  font-size: 20rpx;
+  color: #ff2732;
+  margin: 0 10rpx 0 10rpx;
+}
+
+.red-num {
+  font-size: 24rpx;
+  color: #ff2732;
+  margin: 0 30rpx 0 0rpx;
+}
+
+.daoshoujia {
+  width: 103rpx;
+  height: 29rpx;
+  background-color: #ff2732;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  line-height: 34rpx;
+  color: #fff;
+  margin: 0 30rpx 0 0rpx;
+  padding: 2rpx 20rpx;
+}
+
+.unit {
+  font-size: 18rpx;
+}
+
+.price {
+  font-size: 28rpx;
+  margin-right: 100rpx;
+}
+
+.yongjin {
+  font-size: 20rpx;
+  color: #6e6e6e;
+  margin-right: 165rpx;
+}

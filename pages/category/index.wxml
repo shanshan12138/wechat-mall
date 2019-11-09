@@ -1,0 +1,82 @@
+<!--pages/classify/index.wxml-->
+<view class="top">
+  <view class="search">
+    <icon type="search" size="20" />
+    <input class="weui-input" auto-focus placeholder="烤箱" />
+  </view>
+</view>
+
+<view class='container category-container'>
+  <view class='category-box'>
+    <view class='left-box'>
+      <view wx:for="{{menuItem}}" data-item="{{item}}" bind:tap="tapHandle" class="menu-item {{isActive?'active':''}}" wx:key="{{item.id}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+
+    <view class='right-box'>
+
+      <view class="sub-title">家纺床品</view>
+      <view class='section-box'>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic1.png"></image>
+          <view class="des">春夏换新</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic2.png"></image>
+          <view class="des">家纺床品</view>
+        </view>
+      </view>
+
+      <view class="sub-title">家居家装</view>
+      <view class='section-box'>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic3.png"></image>
+          <view class="des">客餐厅家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic4.png"></image>
+          <view class="des">卧室家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic5.png"></image>
+          <view class="des">灯具</view>
+        </view>
+      </view>
+
+      <view class='section-box'>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic3.png"></image>
+          <view class="des">客餐厅家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic4.png"></image>
+          <view class="des">卧室家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic5.png"></image>
+          <view class="des">灯具</view>
+        </view>
+      </view>
+
+      <view class='section-box'>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic3.png"></image>
+          <view class="des">客餐厅家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic4.png"></image>
+          <view class="des">卧室家具</view>
+        </view>
+        <view class="item">
+          <image class="small-pic" src="../../static/img/pic5.png"></image>
+          <view class="des">灯具</view>
+        </view>
+      </view>
+
+
+
+    </view>
+
+  </view>
+</view>

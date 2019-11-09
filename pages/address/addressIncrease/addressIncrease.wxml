@@ -1,0 +1,25 @@
+<form bindsubmit="submitHandle">
+  <view class="rows">
+    <input name="name" class="input" type="text" placeholder="名字" placeholder-style="color:black;"></input>
+    <input name="tel" class="input" type="number" placeholder="电话" placeholder-style="color:black;"></input>
+  </view>
+  <view>
+    <picker class="picker" name="region" mode="region" bindchange="regionChange" value="{{region}}">
+      <view class="rows picker">
+        <view>{{region[0]}}
+          <image class="arrow" src="../../../static/img/arrow-down.png"></image>
+        </view>
+        <view>{{region[1]}}
+          <image class="arrow" src="../../../static/img/arrow-down.png"></image>
+        </view>
+        <view>{{region[2]}}
+          <image class="arrow" src="../../../static/img/arrow-down.png"></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <input name="street" class="input rows" style="width:100%;" type="text" placeholder="请填写详细街道" placeholder-style="color:black;"></input>
+  <input name="code" class="rows input" style="width:100%;" type="text" placeholder="请填写邮编" placeholder-style="color:black;"></input>
+  <button class="saveBtn" form-type="submit">保存</button>
+
+</form>

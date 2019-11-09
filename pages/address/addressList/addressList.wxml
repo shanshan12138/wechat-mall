@@ -1,0 +1,30 @@
+<!--mall/addressList/addressList.wxml-->
+<view class="address-item" wx:for="{{addressData}}" wx:key="key">
+  <view class="address">
+    <view class="address-message">
+      <view class="address-item">
+        <text>收货人: {{item.name}}</text>
+      </view>
+      <view class="address-item">
+        <text>联系方式: {{item.tel}}</text>
+      </view>
+      <view class="address-item">
+        <text>收货地址: {{item.province+item.city+item.area+item.street}}</text>
+      </view>
+    </view>
+    <view class="operate-list">
+      <radio class="radio" checked="{{item.isDefault == 1}}" >
+        <text>默认地址</text>
+      </radio>
+      <!-- <navigator url=""></navigator> -->
+      <button bindtap="editHandle" data-id="{{item.id}}" class="edit">编辑</button>
+      <image bindtap="deleteHandle" data-id="{{item.id}}" class="delete" src="../../../static/img/delete.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="extra-view"></view>
+
+<view class="addAddress">
+  <navigator url="/pages/user/address/addressIncrease/addressIncrease">添加新地址</navigator>
+</view>

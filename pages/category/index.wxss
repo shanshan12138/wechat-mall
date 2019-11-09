@@ -1,0 +1,92 @@
+/* pages/classify/index.wxss */
+
+.top {
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  width: 750rpx;
+}
+
+.search {
+  width: 694rpx;
+  height: 66rpx;
+  background-color: #f4f8f7;
+  border-radius: 15rpx;
+  display: flex;
+  margin: 17rpx 36rpx 0 25rpx;
+  justify-content: center;
+}
+
+.search icon {
+  width: 30rpx;
+  height: 28rpx;
+  padding: 13rpx 25rpx 17rpx 205rpx;
+}
+
+.weui-input {
+  padding-top: 10rpx;
+  font-size: 26rpx;
+  padding-left: 25rpx;
+  color: #7d7d7d;
+}
+
+.category-box {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-box {
+  flex: 0 0 150rpx;
+  border-right: 1rpx solid #d8d8d8;
+}
+
+.menu-item {
+  line-height: 60rpx;
+  padding: 10rpx 20rpx 10rpx 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  border-left: 6rpx solid #fff;
+}
+
+.menu-item.active {
+  color: #ff2732;
+  border-left-color: #ff2732;
+}
+
+.right-box {
+  padding: 30rpx;
+  width: 535rpx;
+  flex: 1;
+}
+.section-box{
+  display: flex;
+  justify-content: flex-start;
+  padding: 36rpx 0rpx;
+  width: 535rpx;
+}
+.item{
+  width: 165rpx;
+}
+
+.sub-title {
+  font-size: 26rpx;
+  color: #101010;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx;
+}
+.small-pic{
+  padding-left: 50rpx;
+  justify-content: center;
+  width: 66rpx;
+	height: 75rpx;
+  display: block;
+}
+.des{
+  margin: 20rpx 0 30rpx 0;
+  font-size: 26rpx;
+	color: #101010;
+  text-align: center;
+}

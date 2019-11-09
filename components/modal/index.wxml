@@ -1,0 +1,13 @@
+
+<view class="modal" hidden="{{!isShow}}">
+  <view class="title">
+    <text>组件</text>
+    <view bindtap="closeHandle" class="close">
+      <icon type="clear"></icon>
+    </view>
+  </view>
+  <view>
+    <button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandle">获取用户信息</button>
+  </view>
+
+</view>

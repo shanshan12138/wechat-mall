@@ -1,0 +1,194 @@
+<!--pages/user/index.wxml-->
+
+<view class="background">
+  <view class="user-card bg-red">
+    <view class="left">
+      <view class="white-26">
+        <image class="score" src="../../../static/img/user/score-yellow.png"></image>
+        150</view>
+      <view class="white-24">我的积分</view>
+    </view>
+    <!-- 跳转到我的地址 -->
+    <navigator url="../../address/addressList/addressList">
+    <view class="mid">
+      <view class="avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="white-26">
+        <open-data type="userNickName"></open-data>
+        <!-- <open-data type="userGender" lang="zh_CN"></open-data> -->
+      </view>
+      <view class="white-20">（ID:10）</view>
+    </view>
+    </navigator>
+    
+    <view class="right">
+      <view class="white-26">
+        <image class="crash" src="../../../static/img/user/crash.png"></image>
+        120.00</view>
+      <view class="white-24">可提现金额</view>
+    </view>
+  </view>
+  <view class="container">
+    <!-- 我的订单 -->
+    <view class="section">
+      <view class="top">
+      <view class="title">我的订单</view>
+      <navigator url="../address/add/index">
+        <image class="arrow" src="../../../static/img/user/arrow-left.png"></image>
+       </navigator>
+      </view>
+      <view class="bottom">
+
+       <navigator  open-type="switchTab" url="../../category/index">
+         <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/order1.png"></image>
+          </view>
+          <view class="item-des">待付款</view>
+        </view>
+        </navigator>
+
+       
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/order2.png"></image>
+          </view>
+          <view class="item-des">待发货</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/order3.png"></image>
+          </view>
+          <view class="item-des">待收获</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/order4.png"></image>
+          </view>
+          <view class="item-des">待评价</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/order5.png"></image>
+          </view>
+          <view class="item-des">退还/售后</view>
+        </view>
+      </view>
+    </view>
+    <!-- 我的服务 -->
+    <view class="section">
+      <view class="top">
+        <view class="title">我的服务</view>
+      </view>
+      <!-- 红色图标 -->
+      <view class="bottom">
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service1.png"></image>
+          </view>
+          <view class="item-des">我的积分</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service2.png"></image>
+          </view>
+          <view class="item-des">团队成员</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service3.png"></image>
+          </view>
+          <view class="item-des">申请提现</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service4.png"></image>
+          </view>
+          <view class="item-des">推广二维码</view>
+        </view>
+
+      </view>
+      <view class="bottom" style="display:flex;justify-content:flex-start; ">
+        <view class="item" style="padding-left:20rpx;">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service5.png"></image>
+          </view>
+          <view class="item-des">团队销售额</view>
+        </view>
+
+        <view class="item" style="padding-left:82rpx;">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/service6.png"></image>
+          </view>
+          <view class="item-des">其他</view>
+        </view>
+      </view>
+
+      <view class="hr"></view>
+
+      <!-- 黄色图标 -->
+      <view class="bottom">
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-1.png"></image>
+          </view>
+          <view class="item-des">我的积分</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-2.png"></image>
+          </view>
+          <view class="item-des">团队成员</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-3.png"></image>
+          </view>
+          <view class="item-des">申请提现</view>
+        </view>
+
+        <view class="item">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-4.png"></image>
+          </view>
+          <view class="item-des">推广二维码</view>
+        </view>
+
+      </view>
+      <view class="bottom" style="display:flex;justify-content:flex-start; ">
+        <view class="item" style="padding-left:25rpx;">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-5.png"></image>
+          </view>
+          <view class="item-des">团队销售额</view>
+        </view>
+
+        <view class="item" style="padding-left:75rpx;">
+          <view>
+            <image class="order-pic" src="../../../static/img/user/yellow-service-6.png"></image>
+          </view>
+          <view class="item-des">其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="bg">
+  <image></image>
+</view> -->
+  <!-- 分享按钮
+<button open-type="share">分享</button>
+<!-- 获取用户信息 
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandle">获取用户信息</button> -->
+
+<auth-modal></auth-modal>
+</view>

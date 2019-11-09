@@ -1,0 +1,183 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+  <view class="banner">
+    <view class="top">
+      <view class="search">
+        <icon type="search" size="20" />
+        <input class="weui-input" auto-focus placeholder="马卡龙色 多功能早餐机" />
+      </view>
+      <view class="square">
+        <view class="white">企业采购</view>
+      </view>
+      <view class="square">
+        <view class="white">货源推荐</view>
+      </view>
+      <view class="kefu">
+        <image class="icon-kefu" src="../../static/img/index/kefu.png"></image>
+        <view class="white">客服</view>
+      </view>
+    </view>
+
+    <view class="swiper">
+      <swiper indicator-dots='true' indicator-color='white' indicator-active-color='red' autoplay='true'>
+        <swiper-item>
+          <image src='../../static/img/index/index-banner.png'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../../static/img/index/index-banner.png'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../../static/img/index/index-banner.png'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../../static/img/index/index-banner.png'></image>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <!-- 公告 -->
+  <view class="notice">
+    <view class="title">
+      <image class="title-pic" src="../../static/img/index/notice.png"></image>
+      <text class="title-name">公告信息告信息告信息告信息告信息告信息</text>
+    </view>
+    <view class="notice-content">
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-2.png"></image>
+        <view class="notice-des">居家生活</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-3.png"></image>
+        <view class="notice-des">个护清洁</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-1.png"></image>
+        <view class="notice-des">服饰鞋包</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-4.png"></image>
+        <view class="notice-des">美食酒水</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-5.png"></image>
+        <view class="notice-des">运动旅行</view>
+      </view>
+    </view>
+    <view class="notice-content">
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-6.png"></image>
+        <view class="notice-des">母婴亲子</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-7.png"></image>
+        <view class="notice-des">数码家电</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-8.png"></image>
+        <view class="notice-des">美妆洗护</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-9.png"></image>
+        <view class="notice-des">智能家电</view>
+      </view>
+
+      <view class="item">
+        <image class="notice-pic" src="../../static/img/index/notice-10.png"></image>
+        <view class="notice-des">日用百货</view>
+      </view>
+    </view>
+  </view>
+  <!-- 今日特价 -->
+  <view class="bargin">
+    <view class="title">
+      <view>今日特价</view>
+      <view class="short">___</view>
+    </view>
+    <!-- 轮播图 -->
+    <view>
+      <swiper display-multiple-items="3" autoplay interval="{{interval}}" duration="{{duration}}" circular >
+        <block wx:for="{{imgUrls}}">
+          <swiper-item style="border-right:20rpx solid transparent;">
+              <image src="{{item}}" class="slide-image" width="192rpx" height="266rpx" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <!-- 折扣专区 -->
+  <view class="discount">
+    <view class="title">
+      <view class="text-32">折扣专区</view>
+      <view class="more">更多 ></view>
+    </view>
+
+    <view class="discount-box">
+      <view class="discount-content">
+        <view class="section">
+          <view class="des">北欧沙发家具装饰
+            <view class="bottom">
+              <view class="price">￥999</view>
+              <view class="look">点击查看</view>
+            </view>
+          </view>
+
+          <view class="pic-box">
+            <image class="discount-pic1" src="../../static/img/index/discount-1.png"></image>
+          </view>
+        </view>
+        <view class="section" style="background-color: #fbe6de;border-radius: 0rpx 15rpx 0rpx 0rpx;margin-left:10rpx;">
+          <view class="des">手工真皮时尚女包
+            <view class="bottom">
+              <view class="price">￥299</view>
+              <view class="look">点击查看</view>
+            </view>
+          </view>
+
+          <view class="pic-box">
+            <image style="width: 143rpx;height: 121rpx;" class="discount-pic" src="../../static/img/index/discount-2.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="discount-content">
+        <view class="section" style="background-color: #f5f9fc;border-radius: 0rpx 0rpx 0rpx 15rpx;">
+          <view class="des">北欧沙发家具装饰
+
+            <view class="bottom">
+              <view class="price">￥999</view>
+              <view class="look">点击查看</view>
+            </view>
+          </view>
+
+          <view class="pic-box">
+            <image style="width: 165rpx;height: 73rpx;" class="discount-pic1" src="../../static/img/index/discount-3.png"></image>
+          </view>
+        </view>
+        <view class="section" style="background-color: #e6e6ee;border-radius: 0rpx 0rpx 15rpx 0rpx;margin-left:10rpx;">
+          <view class="des">手工真皮时尚女包
+            <view class="bottom">
+              <view class="price">￥299</view>
+              <view class="look">点击查看</view>
+            </view>
+          </view>
+
+          <view class="pic-box">
+            <image style="width: 130rpx;height: 122rpx;" class="discount-pic" src="../../static/img/index/discount-4.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

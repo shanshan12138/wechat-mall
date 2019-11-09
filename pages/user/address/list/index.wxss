@@ -1,0 +1,69 @@
+/* pages/mydress/index.wxss */
+.page{
+  margin: 0 32rpx;
+}
+.title{
+  padding: 5rpx 0;
+  font-size: 35rpx;
+	color: #282828;
+}
+.message{
+  padding: 25rpx 0 0 0;
+  font-size: 28rpx;
+  color: #292929;
+}
+.old-address{
+  font-size: 28rpx;
+  color: #292929;
+  padding-left: 10rpx;
+}
+.mess-box{
+  padding-bottom: 25rpx;
+  border-bottom: solid 1rpx #d1d0cf;
+}
+.tuoyuan{
+  padding-top: 40rpx;
+  width: 20rpx;
+	height: 20rpx;
+  display: block;
+}
+.delete{
+  width: 41rpx;
+	height: 43rpx;
+}
+.address{
+  display: flex;
+  justify-content: space-between;
+}
+.right,
+.left{
+  display: flex;
+  justify-content: flex-start;
+  line-height: 90rpx;
+}
+.edit{
+  margin: 20rpx 50rpx 20rpx 0;
+  width: 161rpx;
+	height: 49rpx;
+  line-height: 49rpx;
+	background-color: #ff2732;
+	border-radius: 5rpx;
+  font-size: 28rpx;
+	color: #ffffff;
+}
+.delete{
+  margin: 30rpx 20rpx 20rpx 20rpx;
+}
+.hr-30{
+  width: 100%;
+  height: 30rpx;
+  background-color: #f8f8f8;
+}
+
+.add{
+  width:100%;
+  background-color:  #ff2732;
+  color: white;
+ margin-top: 380rpx;
+ border-radius: 0;
+}

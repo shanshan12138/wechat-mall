@@ -1,0 +1,67 @@
+/* mall/addressList/addressList.wxss */
+
+page {
+  background-color: #eee;
+}
+
+.addAddress {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}
+.extra-view {
+  width: 100%;
+  height: 90rpx;
+}
+
+.address {
+  background: white;
+  padding: 29rpx 35rpx;
+  margin-bottom: 20rpx;
+}
+
+.address-message {
+  font-size: 28rpx;
+  padding: 29rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.address-item {
+  line-height: 50rpx;
+}
+
+.operate-list {
+  padding-top: 29rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio {
+  width: 450rpx;
+}
+
+.delete {
+  width: 41rpx;
+  height: 43rpx;
+  margin-right: 26rpx;
+}
+.edit{
+  margin-right: 20rpx;
+  padding: 13rpx 50rpx;
+  width: 161rpx;
+	height: 49rpx;
+  line-height: 49rpx;
+	background-color: #ff2732;
+	border-radius: 5rpx;
+  font-size: 28rpx;
+	color: #ffffff;
+}

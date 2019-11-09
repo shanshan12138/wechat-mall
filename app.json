@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goods/list/index",
+    "pages/commission/index",
+    "pages/user/center/index",
+    "pages/category/index",
+    "pages/user/address/list/index",
+    "pages/shopping/index"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF2732",
+    "navigationBarTitleText": "购物商城",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FF2732",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/tab-bar/tabbar-icon1.png",
+        "selectedIconPath": "./static/tab-bar/tabbar-icon1-active.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "./static/tab-bar/tabbar-icon2.png",
+        "selectedIconPath": "./static/tab-bar/tabbar-icon2-active.png"
+      },
+      {
+        "pagePath": "pages/commission/index",
+        "text": "佣金",
+        "iconPath": "./static/tab-bar/tabbar-icon3.png",
+        "selectedIconPath": "./static/tab-bar/tabbar-icon3-active.png"
+      },
+      {
+        "pagePath": "pages/shopping/index",
+        "text": "购物车",
+        "iconPath": "./static/tab-bar/tabbar-icon4.png",
+        "selectedIconPath": "./static/tab-bar/tabbar-icon4-active.png"
+      },
+      {
+        "pagePath": "pages/user/center/index",
+        "text": "我的",
+        "iconPath": "./static/tab-bar/tabbar-icon5.png",
+        "selectedIconPath": "./static/tab-bar/tabbar-icon5-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,42 @@
+/* mall/addressIncrease/addressIncrease.wxss */
+page {
+  background-color: #eee;
+}
+.input {
+  padding: 0 30rpx;
+  border: 1rpx solid #eee;
+  font-size: 28rpx;
+  width: 50%;
+  height: 84rpx;
+}
+.arrow{
+  width: 25rpx;
+	height: 13rpx;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.picker {
+  height: 84rpx;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #eee;
+  font-size: 28rpx;
+}
+
+.saveBtn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  background-color: red;
+  color: white;
+  font-size: 28rpx;
+}
+.saveBtn:not([size='mini']){
+  width: 100%;
+}
+

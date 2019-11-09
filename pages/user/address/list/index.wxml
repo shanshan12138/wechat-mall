@@ -1,0 +1,28 @@
+<!--pages/mydress/index.wxml-->
+<view class="page">
+  <view wx:for="{{addresslist}}">
+  <view class="mess-box">
+    <view class="message">收货人：XXX</view>
+    <view class="message">联系方式：123456789</view>
+    <view class="message">收货地址：山东省青岛市市北区镇江路街道延吉路76号中海大厦2703</view>
+  </view>
+  <view class="address">
+    <view class="left">
+      <view>
+        <image class="tuoyuan" src="../../../../static/img/tuoyuan.png"></image>
+      </view>
+      <view class="old-address">默认地址</view>
+    </view>
+    <view class="right">
+      <button class="edit">编辑</button>
+      <image class="delete" src="../../../../static/img/delete.png"></image>
+    </view>
+  </view>
+  </view>
+</view>
+ <view class="hr-30"></view>
+
+
+<navigator url="../add/index">
+<button class="add">添加新地址</button>
+</navigator>

@@ -1,0 +1,4 @@
+<!--pages/commission/index.wxml-->
+<!-- <button bindtap="tapHandle" type="primary">授权</button> -->
+<auth-modal bind:close="closeModalHandle" bind:getAuth="authSuccessHandle" is-show="{{authModalShow}}"></auth-modal>
+<!-- <navigator open-type="suitchTab" url="/pages">跳转个人中心</navigator> -->
