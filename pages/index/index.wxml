@@ -104,10 +104,10 @@
     </view>
     <!-- 轮播图 -->
     <view>
-      <swiper display-multiple-items="3" autoplay interval="{{interval}}" duration="{{duration}}" circular >
+      <swiper display-multiple-items="3" autoplay interval="{{interval}}" duration="{{duration}}" circular>
         <block wx:for="{{imgUrls}}">
           <swiper-item style="border-right:20rpx solid transparent;">
-              <image src="{{item}}" class="slide-image" width="192rpx" height="266rpx" />
+            <image src="{{item}}" class="slide-image" width="192rpx" height="266rpx" />
           </swiper-item>
         </block>
       </swiper>
@@ -177,6 +177,106 @@
       </view>
     </view>
   </view>
+
+  <!-- 新品上市 -->
+  <view class="new-product">
+    <view class="swiper">
+      <swiper autoplay interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" data-item="{{item}}" wx:key="*this">
+          <swiper-item>
+            <image class="swiper-pic" src='../../static/img/index/new-product.png'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="pro-content">
+      <view wx:for="{{newproducts}}" data-item="{{item}}" class="pro-item">
+
+        <view class="pic-box1">
+          <image class="item-pic" src="../../static/img/index/pro-item-1.png"></image>
+        </view>
+        <text class="pro-name">item.name电动牙刷哈哈哈哈哈哈啊哈</text>
+        <view class="price">￥179.00</view>
+        <view class="bottom">
+          <text class="buy">立即购买</text>
+          <text class="join">加入购物车</text>
+        </view>
+
+      </view>
+    </view>
+    <view class="pro-content">
+      <view wx:for="{{newproducts}}" data-item="{{item}}" class="pro-item">
+        <view class="pic-box1">
+          <image class="item-pic" src="../../static/img/index/pro-item-1.png"></image>
+        </view>
+        <text class="pro-name">item.name电动牙刷哈哈哈哈哈哈啊哈</text>
+        <view class="price">￥179.00</view>
+        <view class="bottom">
+          <text class="buy">立即购买</text>
+          <text class="join">加入购物车</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热卖推荐 -->
+  <view class="recommend">
+    <view class="title">
+      <view>今日特价</view>
+      <view class="short">___</view>
+    </view>
+
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">综合</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">销量</view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">新品</view>
+      <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">价格</view>
+    </view>
+
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+      <swiper-item>
+        <view class="all">
+          <view class="all-goods">
+            <view wx:for="{{list}}" class="good-item">
+              <view class="good" style="background-image:url({{host+item.img_md}});"></view>
+              <view class="right">
+                <view class="des">{{item.name}}</view>
+                <view class="bottom">
+                  <view>
+                    <image class="icon-jifen" src="../../static/img/icon-jifen.png"></image>
+                    <text class="red-text">积分抵扣:</text>
+                    <text class="red-num">27.9</text>
+                    <text class="daoshoujia">到手价</text>
+                    <text class="unit">￥</text>
+                    <text class="price">{{item.price}}</text>
+                  </view>
+                  <view class="second-line">
+                    <image class="icon-jifen" src="../../static/img/icon-zhuanqian.png"></image>
+                    <text class="red-text">赚￥</text>
+                    <text class="red-num">13.9</text>
+                    <text class="yongjin">佣金比例： 15.00%</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+
+          </view>
+
+
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>销量</view>
+      </swiper-item>
+      <swiper-item>
+        <view>新品</view>
+      </swiper-item>
+      <swiper-item>
+        <view>价格</view>
+      </swiper-item>
+    </swiper>
+  </view>
+
 
 
 

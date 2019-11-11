@@ -23,8 +23,10 @@ Page({
     })
   },
   deleteHandle(e) {
+   
     // 解决this指向
     const self = this;
+    console.log(e);
     let id = e.currentTarget.dataset['id'];
     wx.showModal({
       title: '警告',
