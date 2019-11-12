@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/goods/list/index",
     "pages/index/index",
+    "pages/goods/detail/detail",
+    "pages/goods/list/index",
     "pages/commission/index",
     "pages/user/center/index",
     "pages/category/index",
     "pages/user/address/list/index",
     "pages/shopping/index"
-   
   ],
   "window": {
     "backgroundTextStyle": "light",

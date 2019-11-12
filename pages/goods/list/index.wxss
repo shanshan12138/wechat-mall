@@ -1,5 +1,7 @@
 /**index.wxss**/
-
+page{
+  background-color: white;
+}
 .container {
   display: flex;
   justify-content: center;

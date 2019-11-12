@@ -1,0 +1,235 @@
+/* pages/goods/detail/detail.wxss */
+swiper{
+  width: 750rpx;
+	height: 750rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+.des{
+  text-align: left;
+  width: 677rpx;
+	height: 64rpx;
+	font-size: 26rpx;
+	line-height: 38rpx;
+	color: #000000;
+  padding: 0 50rpx 0 25rpx;
+  letter-spacing: 1rpx;
+}
+.detail-des{
+  display: flex;
+  padding: 0 50rpx 0 25rpx;
+  justify-content: space-between
+}
+
+.good-picture {
+  width: 204rpx;
+  height: 202rpx;
+  display: block;
+}
+
+.good-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 33rpx 34rpx 0 26rpx;
+}
+
+.good-item .right {
+  margin-left:15rpx;
+  border-bottom: 1px solid  #cfcfcf;
+  
+}
+.good-item .bottom {
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+
+.good-item .des {
+  width: 456rpx;
+  height: 63rpx;
+  font-family: FZLTHJW--GB1-0;
+  font-size: 26rpx;
+  text-align: left;
+  line-height: 38rpx;
+}
+
+
+.icon-jifen {
+  width: 18rpx;
+  height: 19rpx;
+  padding-left: 0;
+}
+
+.red-text {
+  text-align: left;
+  font-size: 20rpx;
+  color: #ff2732;
+  margin: 0 10rpx 0 10rpx;
+}
+
+.red-num {
+  font-size: 24rpx;
+  color: #ff2732;
+  margin: 0 30rpx 0 0rpx;
+}
+
+.daoshoujia {
+  width: 103rpx;
+  height: 29rpx;
+  background-color: #ff2732;
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  line-height: 34rpx;
+  color: #fff;
+  margin: 0 30rpx 0 0rpx;
+  padding: 2rpx 20rpx;
+}
+.unit {
+  font-size: 18rpx;
+}
+
+.price {
+  font-size: 28rpx;
+  margin-right: 100rpx;
+}
+
+.yongjin {
+  font-size: 20rpx;
+  color: #6e6e6e;
+  margin-right: 165rpx;
+}
+.attention,
+.detail-des-bottom{
+padding: 0 50rpx 0 25rpx;
+}
+.hr-15{
+  width: 750rpx;
+	height: 15rpx;
+	background-color: #f8f8f8; 
+}
+.red-dot{
+  font-size: 50rpx;
+  font-weight: bold;
+	color: #ff2732;
+}
+.text-grey{
+  font-size: 26rpx;
+	color: #000000;
+	opacity: 0.6;
+  padding-left: 10rpx; 
+}
+.attention{
+  display: flex;
+  justify-content: space-between;
+}
+.atten-item{
+  width: 350rpx;
+}
+.eval{
+  padding: 0rpx 28rpx 0 24rpx
+}
+.eval .title{
+  font-size: 28rpx;
+	color: #000000;
+  padding: 30rpx 0 12rpx 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.person .header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25rpx 0 13rpx 0; 
+  font-size: 26rpx;
+}
+.person .fans-name{
+  padding-left: 15rpx;
+}
+.person .header .picture{
+  width: 55rpx;
+	height: 55rpx;
+}
+.person .grey{
+  font-size: 20rpx;
+	color: #000000;
+	opacity: 0.6;
+  margin-right: 20rpx;
+}
+.person .content{
+  padding: 26rpx 0 21rpx 0;
+  font-size: 26rpx;
+}
+.person .content-picture{
+  width: 469rpx;
+	height: 84rpx;
+  padding-bottom: 28rpx;
+}
+.more .title,
+.good-detail .title{
+  height: 26rpx;
+	color: #000000;
+  padding: 30rpx 0 30rpx 0;
+  text-align: center;
+}
+.detail-picture1{
+  width: 750rpx;
+	height: 826rpx;
+  display: block;
+}
+ 
+ .detail-picture2{
+  width: 750rpx;
+	height: 625rpx;
+   display: block;
+}
+/* 页脚 */
+.foot{
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start
+}
+.foot .icon-item{
+  text-align: center;
+	border: solid 1rpx #e5e5e5;
+  width: 99rpx;
+	height: 120rpx;
+  justify-content: center;
+display: flex;
+align-items: center;
+
+}
+.icon-foot{
+  width: 38rpx;
+	height: 37rpx;
+  display: block;
+}
+.foot .join{  
+  width: 228rpx;
+	height: 120rpx;
+	border: solid 1rpx #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.foot .buy{  
+	width: 226rpx;
+	height: 120rpx;
+  color:white;
+  background-color:#ff2732;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.foot .btn{
+ border-radius: 0rpx; 
+}
+button{
+  padding: 0;
+}

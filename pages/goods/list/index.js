@@ -9,8 +9,16 @@ Page({
     host: app.globalData.host,
     currentIndex:1,//当前第几页
     isEnd:false,//是否无新数据
-
   },
+  // 获取页面详情
+  detailHandle(e) {
+    let id = e.currentTarget.dataset['id'];
+    wx.navigateTo({
+      url: '../detail/detail?' + 'id=' + id,
+    })
+    console.log(id);
+  },
+
   //获取商品列表
   async loadList() {
     // 当前第几页
@@ -55,9 +63,6 @@ Page({
   onPullDownRefresh: function () {
     // this.loadlist(1)
   },
-
-  
-  
 
   /**
    * 页面上拉触底事件的处理函数

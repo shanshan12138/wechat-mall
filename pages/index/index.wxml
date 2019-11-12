@@ -43,31 +43,40 @@
       <image class="title-pic" src="../../static/img/index/notice.png"></image>
       <text class="title-name">公告信息告信息告信息告信息告信息告信息</text>
     </view>
+
     <view class="notice-content">
-      <view class="item">
-        <image class="notice-pic" src="../../static/img/index/notice-2.png"></image>
-        <view class="notice-des">居家生活</view>
-      </view>
+      <navigator url="../goods/list/index">
+        <view class="item">
+          <image class="notice-pic" src="../../static/img/index/notice-2.png"></image>
+          <view class="notice-des">居家生活</view>
+        </view>
+      </navigator>
+      <navigator url="../goods/list/index">
+        <view class="item">
+          <image class="notice-pic" src="../../static/img/index/notice-3.png"></image>
+          <view class="notice-des">个护清洁</view>
+        </view>
+      </navigator>
 
-      <view class="item">
-        <image class="notice-pic" src="../../static/img/index/notice-3.png"></image>
-        <view class="notice-des">个护清洁</view>
-      </view>
+      <navigator url="../goods/list/index">
+        <view class="item">
+          <image class="notice-pic" src="../../static/img/index/notice-1.png"></image>
+          <view class="notice-des">服饰鞋包</view>
+        </view>
+      </navigator>
 
-      <view class="item">
-        <image class="notice-pic" src="../../static/img/index/notice-1.png"></image>
-        <view class="notice-des">服饰鞋包</view>
-      </view>
-
-      <view class="item">
-        <image class="notice-pic" src="../../static/img/index/notice-4.png"></image>
-        <view class="notice-des">美食酒水</view>
-      </view>
-
-      <view class="item">
-        <image class="notice-pic" src="../../static/img/index/notice-5.png"></image>
-        <view class="notice-des">运动旅行</view>
-      </view>
+      <navigator url="../goods/list/index">
+        <view class="item">
+          <image class="notice-pic" src="../../static/img/index/notice-4.png"></image>
+          <view class="notice-des">美食酒水</view>
+        </view>
+      </navigator>
+      <navigator url="../goods/list/index">
+        <view class="item">
+          <image class="notice-pic" src="../../static/img/index/notice-5.png"></image>
+          <view class="notice-des">运动旅行</view>
+        </view>
+      </navigator>
     </view>
     <view class="notice-content">
       <view class="item">
