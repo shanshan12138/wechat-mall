@@ -7,8 +7,6 @@
     </swiper-item>
   </block>
 </swiper>
-
-
 <view>
   <view class="des">{{detail.name}}</view>
   <view class="detail-des">
@@ -82,9 +80,9 @@
     —— 商品详情 ——
   </view>
   <view>
-  <!-- 富文本 -->
-  <rich-text nodes="{{detail.detail}}"></rich-text>
-  <rich-text nodes="<p></p>"></rich-text>
+    <!-- 富文本 -->
+    <rich-text nodes="{{detail.detail}}"></rich-text>
+    <rich-text nodes="<p></p>"></rich-text>
 
     <!-- <image class="detail-picture1" src="../../../static/img/detail1.png"></image>
     <image class="detail-picture2" src="../../../static/img/detail2.png"></image> -->
@@ -136,8 +134,44 @@
     <button class="icon-item btn">
       <image class="icon-foot" src="../../../static/img/icon-start1.png"></image>
     </button>
-    <button class="join btn">加入购物车</button>
-    <button class="buy btn" bindtap='showRule'>立即购买</button>
+    <button class="join btn" bindtap="clickme">加入购物车</button>
+    <button class="buy btn" bindtap="clickme">立即购买</button>
   </view>
 
+</view>
+
+
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="popup-box" wx:if="{{showModalStatus}}">
+  <view class="top">
+    <image class="pop-pic" src="{{host+detail.slider[0]}}"></image>
+    <view class="price">
+      <view>
+        <text class="price-ch">价格：￥</text>
+        <text class="price-num">{{detail.price}}</text>
+      </view>
+      <view class="chose">请选择规格属性</view>
+    </view>
+  </view>
+  <view class="middle">
+    <view class="title">尺寸</view>
+    <view class="type {{redtype?'black':'red'}}" bindtap="change">小号</view>
+    <view class="type {{redtype?'black':'red'}}" bindtap="change">大号</view>
+  </view>
+
+  <view class="bottom">
+    <view class="title">数量</view>
+    <!-- 主容器 -->
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <input type="number" bindchange="bindManual" value="{{num}}" />
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+
+  </view>
 </view>

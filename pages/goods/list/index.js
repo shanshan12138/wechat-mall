@@ -9,6 +9,7 @@ Page({
     host: app.globalData.host,
     currentIndex:1,//当前第几页
     isEnd:false,//是否无新数据
+   
   },
   // 获取页面详情
   detailHandle(e) {
@@ -18,7 +19,7 @@ Page({
     })
     console.log(id);
   },
-
+  
   //获取商品列表
   async loadList() {
     // 当前第几页

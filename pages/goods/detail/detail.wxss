@@ -1,26 +1,30 @@
 /* pages/goods/detail/detail.wxss */
-swiper{
+
+swiper {
   width: 750rpx;
-	height: 750rpx;
+  height: 750rpx;
 }
-swiper image{
+
+swiper image {
   width: 100%;
   height: 100%;
 }
-.des{
+
+.des {
   text-align: left;
   width: 677rpx;
-	height: 64rpx;
-	font-size: 26rpx;
-	line-height: 38rpx;
-	color: #000000;
+  height: 64rpx;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  color: #000;
   padding: 0 50rpx 0 25rpx;
   letter-spacing: 1rpx;
 }
-.detail-des{
+
+.detail-des {
   display: flex;
   padding: 0 50rpx 0 25rpx;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .good-picture {
@@ -37,10 +41,10 @@ swiper image{
 }
 
 .good-item .right {
-  margin-left:15rpx;
-  border-bottom: 1px solid  #cfcfcf;
-  
+  margin-left: 15rpx;
+  border-bottom: 1px solid #cfcfcf;
 }
+
 .good-item .bottom {
   margin-top: 15rpx;
   margin-left: 15rpx;
@@ -54,7 +58,6 @@ swiper image{
   text-align: left;
   line-height: 38rpx;
 }
-
 
 .icon-jifen {
   width: 18rpx;
@@ -86,6 +89,7 @@ swiper image{
   margin: 0 30rpx 0 0rpx;
   padding: 2rpx 20rpx;
 }
+
 .unit {
   font-size: 18rpx;
 }
@@ -100,136 +104,278 @@ swiper image{
   color: #6e6e6e;
   margin-right: 165rpx;
 }
-.attention,
-.detail-des-bottom{
-padding: 0 50rpx 0 25rpx;
+
+.attention, .detail-des-bottom {
+  padding: 0 50rpx 0 25rpx;
 }
-.hr-15{
+
+.hr-15 {
   width: 750rpx;
-	height: 15rpx;
-	background-color: #f8f8f8; 
+  height: 15rpx;
+  background-color: #f8f8f8;
 }
-.red-dot{
+
+.red-dot {
   font-size: 50rpx;
   font-weight: bold;
-	color: #ff2732;
+  color: #ff2732;
 }
-.text-grey{
+
+.text-grey {
   font-size: 26rpx;
-	color: #000000;
-	opacity: 0.6;
-  padding-left: 10rpx; 
+  color: #000;
+  opacity: 0.6;
+  padding-left: 10rpx;
 }
-.attention{
+
+.attention {
   display: flex;
   justify-content: space-between;
 }
-.atten-item{
+
+.atten-item {
   width: 350rpx;
 }
-.eval{
-  padding: 0rpx 28rpx 0 24rpx
+
+.eval {
+  padding: 0rpx 28rpx 0 24rpx;
 }
-.eval .title{
+
+.eval .title {
   font-size: 28rpx;
-	color: #000000;
+  color: #000;
   padding: 30rpx 0 12rpx 0;
   border-bottom: 1px solid #e5e5e5;
 }
-.person .header{
+
+.person .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 25rpx 0 13rpx 0; 
+  padding: 25rpx 0 13rpx 0;
   font-size: 26rpx;
 }
-.person .fans-name{
+
+.person .fans-name {
   padding-left: 15rpx;
 }
-.person .header .picture{
+
+.person .header .picture {
   width: 55rpx;
-	height: 55rpx;
+  height: 55rpx;
 }
-.person .grey{
+
+.person .grey {
   font-size: 20rpx;
-	color: #000000;
-	opacity: 0.6;
+  color: #000;
+  opacity: 0.6;
   margin-right: 20rpx;
 }
-.person .content{
+
+.person .content {
   padding: 26rpx 0 21rpx 0;
   font-size: 26rpx;
 }
-.person .content-picture{
+
+.person .content-picture {
   width: 469rpx;
-	height: 84rpx;
+  height: 84rpx;
   padding-bottom: 28rpx;
 }
-.more .title,
-.good-detail .title{
+
+.more .title, .good-detail .title {
   height: 26rpx;
-	color: #000000;
+  color: #000;
   padding: 30rpx 0 30rpx 0;
   text-align: center;
 }
-.detail-picture1{
+
+.detail-picture1 {
   width: 750rpx;
-	height: 826rpx;
+  height: 826rpx;
   display: block;
 }
- 
- .detail-picture2{
+
+.detail-picture2 {
   width: 750rpx;
-	height: 625rpx;
-   display: block;
+  height: 625rpx;
+  display: block;
 }
+
 /* 页脚 */
-.foot{
+
+.foot {
   width: 100%;
   height: 120rpx;
   position: fixed;
   bottom: 0rpx;
   background-color: white;
   display: flex;
-  justify-content: flex-start
+  justify-content: flex-start;
 }
-.foot .icon-item{
-  text-align: center;
-	border: solid 1rpx #e5e5e5;
-  width: 99rpx;
-	height: 120rpx;
-  justify-content: center;
-display: flex;
-align-items: center;
 
+.foot .icon-item {
+  text-align: center;
+  border: solid 1rpx #e5e5e5;
+  width: 99rpx;
+  height: 120rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-.icon-foot{
+
+.icon-foot {
   width: 38rpx;
-	height: 37rpx;
+  height: 37rpx;
   display: block;
 }
-.foot .join{  
+
+.foot .join {
   width: 228rpx;
-	height: 120rpx;
-	border: solid 1rpx #e5e5e5;
+  height: 120rpx;
+  border: solid 1rpx #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.foot .buy{  
-	width: 226rpx;
-	height: 120rpx;
-  color:white;
-  background-color:#ff2732;
+
+.foot .buy {
+  width: 226rpx;
+  height: 120rpx;
+  color: white;
+  background-color: #ff2732;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.foot .btn {
+  border-radius: 0rpx;
 }
-.foot .btn{
- border-radius: 0rpx; 
-}
-button{
+
+button {
   padding: 0;
+}
+
+/*使屏幕变暗  */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+
+.popup-box {
+  height: 866rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  padding: 30rpx 25rpx;
+}
+.popup-box .top{
+  display: flex;
+  justify-content: flex-start;
+}
+.popup-box .price{
+  padding-top: 230rpx;
+}
+.popup-box .price .price-ch{
+  font-size: 28rpx;
+	color: #ff2732;
+  padding-bottom: 20rpx;
+}
+.popup-box .price .price-num{
+  font-size: 32rpx;
+	color: #ff2732;
+}
+.popup-box .chose{
+  font-size: 22rpx;
+	color: #262626;
+}
+.popup-box .top .pop-pic {
+  border: 2rpx solid #eee;
+  width: 173px;
+  height: 192px;
+  border-radius: 5px;
+  margin:0 12rpx 50rpx 0;
+}
+.popup-box .title{
+  font-size: 26rpx;
+	color: #262626;
+  margin-bottom: 20rpx;
+}
+.popup-box .middle .type{
+  width: 351rpx;
+  border-radius: 3rpx;	
+  padding: 10rpx;
+  font-size: 24rpx;	
+  margin-bottom: 20rpx;
+}
+.popup-box .black{
+  border: solid 1rpx #262626;
+  color: #262626;
+}
+.popup-box .red{
+  color: #ff2732;
+	border: 1rpx solid #ff2732;
+  
+}
+/*主容器*/
+
+.stepper {
+  width: 250rpx;
+  height: 40rpx;
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+/*加号和减号*/
+
+.stepper text {
+  width: 80rpx;
+  line-height: 40rpx;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 78rpx;
+  height: 40rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #ccc;
 }
